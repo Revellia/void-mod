@@ -2,5 +2,7 @@
     "itemGroup.voidmod": "Void Mod",
     "item.voidmod.void_shard": "Void Shard",
     "item.voidmod.void_diamond": "Void Diamond",
-    "block.voidmod.void_ore": "Void Ore"
+    "block.voidmod.void_ore": "Void Ore",
+    "block.voidmod.void_stone": "Void Stone",
+    "block.voidmod.void_cobble": "Void Cobblestone"
 }

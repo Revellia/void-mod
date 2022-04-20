@@ -26,6 +26,14 @@ public class BlockInit {
             () -> new Block(BlockBehaviour.Properties.of(Material.AMETHYST, MaterialColor.COLOR_BLACK).strength(5.0f).sound(SoundType.AMETHYST).requiresCorrectToolForDrops()),
             object -> () -> new BlockItem(object.get(), new BlockItem.Properties().tab(VoidMod.VOID_TAB)));
 
+    public static final RegistryObject<Block> VOID_STONE = register("void_stone",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.COLOR_BLACK).strength(5.0f).sound(SoundType.STONE).requiresCorrectToolForDrops()),
+            object -> () -> new BlockItem(object.get(), new BlockItem.Properties().tab(VoidMod.VOID_TAB)));
+
+    public static final RegistryObject<Block> VOID_COBBLE = register("void_cobble",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.COLOR_BLACK).strength(5.0f).sound(SoundType.STONE).requiresCorrectToolForDrops()),
+            object -> () -> new BlockItem(object.get(), new BlockItem.Properties().tab(VoidMod.VOID_TAB)));
+
     //Init Block item part of block
     private static <T extends Block> RegistryObject<T> registerBlock(final String name, final Supplier<? extends T> block) {
         return BLOCKS.register(name, block);
