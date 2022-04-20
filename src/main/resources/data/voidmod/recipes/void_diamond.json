@@ -1,0 +1,21 @@
+{
+  "type": "crafting_shaped",
+
+  "pattern": [
+    " I ",
+    "IVI",
+    " I "
+  ],
+  "key": {
+    "I": {
+      "item": "voidmod:void_shard"
+    },
+    "V": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result": {
+    "item": "voidmod:void_diamond",
+    "count": 1
+  }
+}

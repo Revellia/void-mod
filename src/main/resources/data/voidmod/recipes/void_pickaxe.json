@@ -1,0 +1,21 @@
+{
+  "type": "crafting_shaped",
+
+  "pattern": [
+    "III",
+    " V ",
+    " V "
+  ],
+  "key": {
+    "I": {
+      "item": "voidmod:void_diamond"
+    },
+    "V": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "voidmod:void_pickaxe",
+    "count": 1
+  }
+}

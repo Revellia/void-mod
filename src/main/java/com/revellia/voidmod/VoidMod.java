@@ -2,6 +2,7 @@ package com.revellia.voidmod;
 
 import com.revellia.voidmod.init.BlockInit;
 import com.revellia.voidmod.init.ItemInit;
+import com.revellia.voidmod.init.ToolMaterialInit;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.api.distmarker.Dist;

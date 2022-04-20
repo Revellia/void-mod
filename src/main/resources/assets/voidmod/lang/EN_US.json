@@ -4,5 +4,8 @@
     "item.voidmod.void_diamond": "Void Diamond",
     "block.voidmod.void_ore": "Void Ore",
     "block.voidmod.void_stone": "Void Stone",
-    "block.voidmod.void_cobble": "Void Cobblestone"
+    "block.voidmod.void_cobble": "Void Cobblestone",
+    "block.voidmod.enoki_ore": "Enoki Ore",
+    "item.voidmod.enoki_piece": "Enoki Piece",
+    "item.voidmod.void_pickaxe": "Void Pickaxe"
 }

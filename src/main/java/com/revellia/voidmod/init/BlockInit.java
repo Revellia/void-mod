@@ -3,11 +3,13 @@ package com.revellia.voidmod.init;
 import com.revellia.voidmod.VoidMod;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Tier;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.material.MaterialColor;
+import net.minecraftforge.common.TierSortingRegistry;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -32,6 +34,10 @@ public class BlockInit {
 
     public static final RegistryObject<Block> VOID_COBBLE = register("void_cobble",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.COLOR_BLACK).strength(5.0f).sound(SoundType.STONE).requiresCorrectToolForDrops()),
+            object -> () -> new BlockItem(object.get(), new BlockItem.Properties().tab(VoidMod.VOID_TAB)));
+
+    public static final RegistryObject<Block> ENOKI_ORE = register("enoki_ore",
+            () -> new Block(BlockBehaviour.Properties.of(Material.AMETHYST, MaterialColor.COLOR_BLACK).strength(5.0f).sound(SoundType.AMETHYST).requiresCorrectToolForDrops().lightLevel(state -> 4)),
             object -> () -> new BlockItem(object.get(), new BlockItem.Properties().tab(VoidMod.VOID_TAB)));
 
     //Init Block item part of block
