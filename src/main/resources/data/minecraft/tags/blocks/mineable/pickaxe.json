@@ -4,6 +4,9 @@
     "voidmod:void_ore",
     "voidmod:void_stone",
     "voidmod:void_cobble",
-    "voidmod:enoki_ore"
+    "voidmod:enoki_ore",
+    "voidmod:soul_ore",
+    "voidmod:shard_ore",
+    "voidmod:null_ore"
   ]
 }

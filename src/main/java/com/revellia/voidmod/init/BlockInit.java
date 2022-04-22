@@ -37,7 +37,19 @@ public class BlockInit {
             object -> () -> new BlockItem(object.get(), new BlockItem.Properties().tab(VoidMod.VOID_TAB)));
 
     public static final RegistryObject<Block> ENOKI_ORE = register("enoki_ore",
-            () -> new Block(BlockBehaviour.Properties.of(Material.AMETHYST, MaterialColor.COLOR_BLACK).strength(5.0f).sound(SoundType.AMETHYST).requiresCorrectToolForDrops().lightLevel(state -> 4)),
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.COLOR_BLUE).strength(6.0f).sound(SoundType.STONE).requiresCorrectToolForDrops().lightLevel(state -> 6)),
+            object -> () -> new BlockItem(object.get(), new BlockItem.Properties().tab(VoidMod.VOID_TAB)));
+
+    public static final RegistryObject<Block> SOUL_ORE = register("soul_ore",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.COLOR_BLACK).strength(7.0f).sound(SoundType.GLASS).requiresCorrectToolForDrops().lightLevel(state -> 4)),
+            object -> () -> new BlockItem(object.get(), new BlockItem.Properties().tab(VoidMod.VOID_TAB)));
+
+    public static final RegistryObject<Block> SHARD_ORE = register("shard_ore",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.COLOR_BLACK).strength(8.0f).sound(SoundType.GLASS).requiresCorrectToolForDrops().lightLevel(state -> 2)),
+            object -> () -> new BlockItem(object.get(), new BlockItem.Properties().tab(VoidMod.VOID_TAB)));
+
+    public static final RegistryObject<Block> NULL_ORE = register("null_ore",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.COLOR_BLACK).strength(9.0f).sound(SoundType.STONE).requiresCorrectToolForDrops()),
             object -> () -> new BlockItem(object.get(), new BlockItem.Properties().tab(VoidMod.VOID_TAB)));
 
     //Init Block item part of block
